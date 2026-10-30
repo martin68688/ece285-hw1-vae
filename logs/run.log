@@ -1,0 +1,386 @@
+[wslx] start 2026-10-30T14:14:14-07:00
+train=5216 test=624 device=cuda
+params: 8.73M
+epoch   1 | train  10803.96 (rec  10728.70, kl  75.26) | test  10554.61 (rec  10500.16, kl  54.45) | 2.0s
+epoch   2 | train  10445.96 (rec  10386.58, kl  59.37) | test  10460.19 (rec  10408.52, kl  51.67) | 1.2s
+epoch   3 | train  10379.93 (rec  10323.15, kl  56.78) | test  10425.04 (rec  10370.24, kl  54.80) | 1.1s
+epoch   4 | train  10355.77 (rec  10301.30, kl  54.48) | test  10411.21 (rec  10361.15, kl  50.06) | 1.2s
+epoch   5 | train  10336.06 (rec  10284.85, kl  51.21) | test  10395.93 (rec  10343.56, kl  52.37) | 1.2s
+epoch   6 | train  10323.67 (rec  10275.13, kl  48.54) | test  10381.26 (rec  10333.03, kl  48.23) | 1.2s
+epoch   7 | train  10335.46 (rec  10276.23, kl  59.23) | test  10390.81 (rec  10342.01, kl  48.80) | 1.1s
+epoch   8 | train  10313.81 (rec  10265.45, kl  48.36) | test  10387.87 (rec  10343.74, kl  44.13) | 1.1s
+epoch   9 | train  10307.79 (rec  10261.34, kl  46.46) | test  10367.19 (rec  10319.63, kl  47.56) | 1.2s
+epoch  10 | train  10300.96 (rec  10254.95, kl  46.01) | test  10369.03 (rec  10325.68, kl  43.35) | 1.2s
+epoch  11 | train  10294.01 (rec  10248.64, kl  45.37) | test  10362.70 (rec  10318.27, kl  44.43) | 1.2s
+epoch  12 | train  10292.91 (rec  10247.81, kl  45.10) | test  10367.55 (rec  10321.42, kl  46.13) | 1.2s
+epoch  13 | train  10289.20 (rec  10243.90, kl  45.30) | test  10349.81 (rec  10308.17, kl  41.64) | 1.2s
+epoch  14 | train  10287.90 (rec  10242.85, kl  45.05) | test  10352.64 (rec  10310.16, kl  42.48) | 1.2s
+epoch  15 | train  10284.38 (rec  10239.62, kl  44.76) | test  10353.37 (rec  10308.10, kl  45.27) | 1.1s
+epoch  16 | train  10280.72 (rec  10236.23, kl  44.49) | test  10362.24 (rec  10319.03, kl  43.21) | 1.1s
+epoch  17 | train  10282.96 (rec  10238.67, kl  44.28) | test  10350.73 (rec  10307.19, kl  43.54) | 1.2s
+epoch  18 | train  10280.74 (rec  10236.04, kl  44.70) | test  10352.53 (rec  10308.44, kl  44.09) | 1.1s
+epoch  19 | train  10277.34 (rec  10232.99, kl  44.34) | test  10343.30 (rec  10300.05, kl  43.25) | 1.2s
+epoch  20 | train  10276.49 (rec  10232.14, kl  44.34) | test  10340.67 (rec  10296.88, kl  43.79) | 1.2s
+epoch  21 | train  10277.09 (rec  10232.63, kl  44.46) | test  10351.06 (rec  10305.74, kl  45.32) | 1.2s
+epoch  22 | train  10276.56 (rec  10232.08, kl  44.48) | test  10342.02 (rec  10297.58, kl  44.44) | 1.2s
+epoch  23 | train  10273.06 (rec  10228.88, kl  44.18) | test  10339.94 (rec  10296.34, kl  43.60) | 1.2s
+epoch  24 | train  10273.72 (rec  10229.84, kl  43.88) | test  10347.02 (rec  10302.76, kl  44.25) | 1.8s
+epoch  25 | train  10272.73 (rec  10228.64, kl  44.09) | test  10339.19 (rec  10296.11, kl  43.08) | 1.2s
+epoch  26 | train  10272.03 (rec  10227.99, kl  44.03) | test  10337.90 (rec  10293.87, kl  44.03) | 1.2s
+epoch  27 | train  10267.60 (rec  10223.76, kl  43.83) | test  10339.51 (rec  10297.88, kl  41.63) | 1.2s
+epoch  28 | train  10267.23 (rec  10223.42, kl  43.81) | test  10339.14 (rec  10297.01, kl  42.13) | 1.1s
+epoch  29 | train  10267.10 (rec  10223.36, kl  43.74) | test  10335.82 (rec  10293.06, kl  42.75) | 1.2s
+epoch  30 | train  10267.14 (rec  10223.25, kl  43.89) | test  10335.84 (rec  10290.31, kl  45.53) | 1.2s
+epoch  31 | train  10265.64 (rec  10221.68, kl  43.96) | test  10338.92 (rec  10296.19, kl  42.73) | 1.2s
+epoch  32 | train  10264.06 (rec  10220.26, kl  43.80) | test  10334.78 (rec  10292.54, kl  42.24) | 1.2s
+epoch  33 | train  10267.11 (rec  10223.36, kl  43.75) | test  10335.40 (rec  10290.89, kl  44.50) | 1.2s
+epoch  34 | train  10263.85 (rec  10220.15, kl  43.70) | test  10335.11 (rec  10290.83, kl  44.28) | 1.2s
+epoch  35 | train  10264.13 (rec  10220.26, kl  43.87) | test  10335.27 (rec  10293.45, kl  41.82) | 1.2s
+epoch  36 | train  10261.62 (rec  10218.02, kl  43.60) | test  10341.03 (rec  10296.80, kl  44.24) | 1.2s
+epoch  37 | train  10261.93 (rec  10218.14, kl  43.79) | test  10334.33 (rec  10292.49, kl  41.84) | 1.2s
+epoch  38 | train  10260.92 (rec  10217.18, kl  43.73) | test  10331.07 (rec  10287.15, kl  43.92) | 1.2s
+epoch  39 | train  10262.59 (rec  10218.84, kl  43.75) | test  10333.59 (rec  10289.76, kl  43.83) | 1.1s
+epoch  40 | train  10261.36 (rec  10217.67, kl  43.69) | test  10358.93 (rec  10314.51, kl  44.42) | 1.2s
+epoch  41 | train  10260.29 (rec  10216.69, kl  43.60) | test  10335.15 (rec  10293.29, kl  41.86) | 1.1s
+epoch  42 | train  10259.86 (rec  10216.18, kl  43.68) | test  10344.22 (rec  10300.79, kl  43.44) | 1.2s
+epoch  43 | train  10258.30 (rec  10214.76, kl  43.54) | test  10330.09 (rec  10286.71, kl  43.39) | 1.2s
+epoch  44 | train  10255.18 (rec  10211.70, kl  43.47) | test  10334.26 (rec  10289.72, kl  44.54) | 1.2s
+epoch  45 | train  10256.49 (rec  10212.92, kl  43.56) | test  10354.39 (rec  10312.51, kl  41.88) | 1.2s
+epoch  46 | train  10255.49 (rec  10212.00, kl  43.49) | test  10333.56 (rec  10290.59, kl  42.97) | 1.2s
+epoch  47 | train  10255.06 (rec  10211.59, kl  43.47) | test  10332.02 (rec  10288.94, kl  43.07) | 1.2s
+epoch  48 | train  10254.88 (rec  10211.46, kl  43.42) | test  10333.64 (rec  10291.73, kl  41.91) | 1.2s
+epoch  49 | train  10253.49 (rec  10209.94, kl  43.55) | test  10332.19 (rec  10288.63, kl  43.55) | 1.2s
+epoch  50 | train  10252.51 (rec  10209.05, kl  43.47) | test  10328.17 (rec  10284.96, kl  43.21) | 1.2s
+epoch  51 | train  10254.58 (rec  10211.21, kl  43.37) | test  10331.53 (rec  10288.70, kl  42.83) | 1.2s
+epoch  52 | train  10252.77 (rec  10209.30, kl  43.47) | test  10327.57 (rec  10285.06, kl  42.50) | 1.2s
+epoch  53 | train  10254.10 (rec  10210.60, kl  43.50) | test  10326.83 (rec  10284.16, kl  42.67) | 1.2s
+epoch  54 | train  10249.84 (rec  10206.47, kl  43.36) | test  10331.51 (rec  10287.81, kl  43.71) | 1.2s
+epoch  55 | train  10252.30 (rec  10208.83, kl  43.47) | test  10330.03 (rec  10285.16, kl  44.87) | 1.2s
+epoch  56 | train  10252.50 (rec  10209.21, kl  43.29) | test  10325.72 (rec  10282.31, kl  43.41) | 1.2s
+epoch  57 | train  10248.77 (rec  10205.45, kl  43.32) | test  10328.61 (rec  10286.97, kl  41.64) | 1.2s
+epoch  58 | train  10250.12 (rec  10206.85, kl  43.28) | test  10327.36 (rec  10284.05, kl  43.31) | 1.2s
+epoch  59 | train  10249.46 (rec  10205.95, kl  43.50) | test  10331.32 (rec  10289.30, kl  42.02) | 1.2s
+epoch  60 | train  10249.86 (rec  10206.45, kl  43.42) | test  10325.51 (rec  10282.84, kl  42.67) | 1.2s
+epoch  61 | train  10247.35 (rec  10203.87, kl  43.48) | test  10330.54 (rec  10288.02, kl  42.52) | 1.2s
+epoch  62 | train  10248.59 (rec  10205.25, kl  43.35) | test  10326.05 (rec  10284.05, kl  42.00) | 1.2s
+epoch  63 | train  10246.04 (rec  10202.75, kl  43.29) | test  10325.46 (rec  10282.22, kl  43.24) | 1.2s
+epoch  64 | train  10248.32 (rec  10205.04, kl  43.28) | test  10326.39 (rec  10283.13, kl  43.25) | 1.2s
+epoch  65 | train  10246.34 (rec  10203.14, kl  43.20) | test  10326.26 (rec  10283.69, kl  42.57) | 1.2s
+epoch  66 | train  10247.09 (rec  10203.72, kl  43.36) | test  10325.56 (rec  10282.24, kl  43.32) | 1.2s
+epoch  67 | train  10244.19 (rec  10200.99, kl  43.21) | test  10326.62 (rec  10282.92, kl  43.69) | 1.1s
+epoch  68 | train  10245.60 (rec  10202.21, kl  43.39) | test  10326.32 (rec  10283.56, kl  42.76) | 1.2s
+epoch  69 | train  10244.28 (rec  10200.89, kl  43.39) | test  10324.36 (rec  10280.16, kl  44.19) | 1.2s
+epoch  70 | train  10242.20 (rec  10198.83, kl  43.36) | test  10324.33 (rec  10280.77, kl  43.56) | 1.3s
+epoch  71 | train  10243.89 (rec  10200.53, kl  43.36) | test  10323.38 (rec  10280.15, kl  43.23) | 1.3s
+epoch  72 | train  10243.05 (rec  10199.81, kl  43.24) | test  10323.62 (rec  10280.72, kl  42.90) | 1.2s
+epoch  73 | train  10243.83 (rec  10200.55, kl  43.29) | test  10324.15 (rec  10282.06, kl  42.09) | 1.2s
+epoch  74 | train  10242.31 (rec  10198.92, kl  43.39) | test  10324.21 (rec  10281.25, kl  42.95) | 1.2s
+epoch  75 | train  10241.55 (rec  10198.22, kl  43.33) | test  10323.49 (rec  10281.04, kl  42.46) | 1.2s
+epoch  76 | train  10241.60 (rec  10198.16, kl  43.43) | test  10324.07 (rec  10281.62, kl  42.45) | 1.8s
+epoch  77 | train  10241.51 (rec  10198.23, kl  43.28) | test  10327.86 (rec  10285.69, kl  42.16) | 1.2s
+epoch  78 | train  10242.19 (rec  10198.87, kl  43.32) | test  10325.37 (rec  10282.71, kl  42.66) | 1.2s
+epoch  79 | train  10240.22 (rec  10196.82, kl  43.40) | test  10323.75 (rec  10281.18, kl  42.58) | 1.2s
+epoch  80 | train  10239.88 (rec  10196.62, kl  43.26) | test  10326.20 (rec  10283.51, kl  42.69) | 1.2s
+epoch  81 | train  10241.27 (rec  10197.95, kl  43.31) | test  10323.48 (rec  10280.67, kl  42.81) | 1.2s
+epoch  82 | train  10241.01 (rec  10197.59, kl  43.42) | test  10323.18 (rec  10279.90, kl  43.28) | 1.2s
+epoch  83 | train  10238.92 (rec  10195.79, kl  43.14) | test  10322.84 (rec  10280.12, kl  42.72) | 1.2s
+epoch  84 | train  10238.91 (rec  10195.55, kl  43.36) | test  10322.05 (rec  10279.43, kl  42.62) | 1.2s
+epoch  85 | train  10237.46 (rec  10194.14, kl  43.32) | test  10322.35 (rec  10279.62, kl  42.72) | 1.2s
+epoch  86 | train  10239.57 (rec  10196.33, kl  43.23) | test  10322.11 (rec  10279.63, kl  42.48) | 1.2s
+epoch  87 | train  10238.00 (rec  10194.50, kl  43.49) | test  10324.15 (rec  10281.37, kl  42.78) | 1.2s
+epoch  88 | train  10237.31 (rec  10193.92, kl  43.39) | test  10322.90 (rec  10279.90, kl  43.00) | 1.2s
+epoch  89 | train  10237.96 (rec  10194.50, kl  43.46) | test  10322.18 (rec  10278.95, kl  43.23) | 1.2s
+epoch  90 | train  10237.39 (rec  10193.91, kl  43.47) | test  10323.27 (rec  10279.73, kl  43.54) | 1.2s
+epoch  91 | train  10237.07 (rec  10193.57, kl  43.50) | test  10322.46 (rec  10279.47, kl  42.99) | 1.2s
+epoch  92 | train  10236.68 (rec  10193.35, kl  43.33) | test  10322.08 (rec  10278.98, kl  43.11) | 1.2s
+epoch  93 | train  10236.70 (rec  10193.34, kl  43.35) | test  10321.95 (rec  10278.77, kl  43.18) | 1.2s
+epoch  94 | train  10238.73 (rec  10195.37, kl  43.36) | test  10322.27 (rec  10279.09, kl  43.18) | 1.2s
+epoch  95 | train  10237.85 (rec  10194.39, kl  43.46) | test  10322.48 (rec  10279.75, kl  42.73) | 1.2s
+epoch  96 | train  10237.24 (rec  10193.97, kl  43.27) | test  10322.14 (rec  10279.04, kl  43.10) | 1.2s
+epoch  97 | train  10238.13 (rec  10194.80, kl  43.33) | test  10322.80 (rec  10279.31, kl  43.49) | 1.2s
+epoch  98 | train  10237.21 (rec  10193.82, kl  43.38) | test  10321.56 (rec  10278.78, kl  42.78) | 1.2s
+epoch  99 | train  10235.75 (rec  10192.46, kl  43.29) | test  10321.71 (rec  10278.69, kl  43.02) | 1.2s
+epoch 100 | train  10236.88 (rec  10193.55, kl  43.33) | test  10322.38 (rec  10279.27, kl  43.11) | 1.2s
+train=5216 test=624 device=cuda
+params: 7.16M
+epoch   1 | train  11364.09 (rec  10712.82, kl 651.27) | test  10545.25 (rec  10489.96, kl  55.30) | 1.7s
+epoch   2 | train  10450.25 (rec  10390.91, kl  59.34) | test  10465.09 (rec  10410.53, kl  54.55) | 1.2s
+epoch   3 | train  10388.48 (rec  10329.91, kl  58.57) | test  10436.52 (rec  10383.58, kl  52.94) | 1.2s
+epoch   4 | train  10362.69 (rec  10306.39, kl  56.30) | test  10432.31 (rec  10381.10, kl  51.21) | 1.2s
+epoch   5 | train  10348.63 (rec  10293.44, kl  55.19) | test  10410.42 (rec  10358.79, kl  51.63) | 1.1s
+epoch   6 | train  10334.57 (rec  10280.98, kl  53.59) | test  10391.27 (rec  10344.70, kl  46.57) | 1.2s
+epoch   7 | train  10327.14 (rec  10272.98, kl  54.16) | test  10387.89 (rec  10336.81, kl  51.08) | 1.2s
+epoch   8 | train  10318.30 (rec  10266.50, kl  51.80) | test  10385.13 (rec  10334.17, kl  50.96) | 1.2s
+epoch   9 | train  10314.08 (rec  10261.71, kl  52.37) | test  10384.77 (rec  10331.40, kl  53.37) | 1.2s
+epoch  10 | train  10310.13 (rec  10259.37, kl  50.76) | test  10370.95 (rec  10320.22, kl  50.73) | 1.2s
+epoch  11 | train  10308.52 (rec  10256.93, kl  51.59) | test  10379.87 (rec  10330.15, kl  49.71) | 1.2s
+epoch  12 | train  10303.76 (rec  10253.03, kl  50.73) | test  10371.60 (rec  10321.47, kl  50.14) | 1.1s
+epoch  13 | train  10301.40 (rec  10251.37, kl  50.03) | test  10372.06 (rec  10322.51, kl  49.54) | 1.2s
+epoch  14 | train  10298.57 (rec  10248.10, kl  50.47) | test  10367.64 (rec  10316.75, kl  50.89) | 1.2s
+epoch  15 | train  10293.77 (rec  10244.11, kl  49.66) | test  10360.09 (rec  10313.83, kl  46.27) | 1.2s
+epoch  16 | train  10289.03 (rec  10239.92, kl  49.11) | test  10364.42 (rec  10312.85, kl  51.57) | 1.2s
+epoch  17 | train  10290.34 (rec  10240.82, kl  49.52) | test  10360.62 (rec  10311.23, kl  49.39) | 1.2s
+epoch  18 | train  10286.22 (rec  10237.42, kl  48.80) | test  10347.99 (rec  10301.19, kl  46.80) | 1.2s
+epoch  19 | train  10284.20 (rec  10235.57, kl  48.63) | test  10354.89 (rec  10307.24, kl  47.65) | 1.2s
+epoch  20 | train  10289.00 (rec  10239.75, kl  49.25) | test  10364.75 (rec  10316.27, kl  48.48) | 1.2s
+epoch  21 | train  10285.40 (rec  10236.72, kl  48.68) | test  10359.98 (rec  10310.08, kl  49.91) | 1.2s
+epoch  22 | train  10283.04 (rec  10235.37, kl  47.67) | test  10354.57 (rec  10307.48, kl  47.08) | 1.3s
+epoch  23 | train  10282.62 (rec  10234.26, kl  48.36) | test  10348.62 (rec  10301.32, kl  47.31) | 1.2s
+epoch  24 | train  10281.41 (rec  10233.45, kl  47.96) | test  10360.27 (rec  10311.08, kl  49.19) | 1.2s
+epoch  25 | train  10277.87 (rec  10230.01, kl  47.86) | test  10346.12 (rec  10300.35, kl  45.77) | 1.2s
+epoch  26 | train  10278.29 (rec  10230.57, kl  47.72) | test  10353.31 (rec  10304.12, kl  49.20) | 1.8s
+epoch  27 | train  10276.59 (rec  10229.05, kl  47.54) | test  10352.76 (rec  10304.75, kl  48.00) | 1.2s
+epoch  28 | train  10277.16 (rec  10229.50, kl  47.66) | test  10351.59 (rec  10308.77, kl  42.82) | 1.2s
+epoch  29 | train  10272.83 (rec  10225.86, kl  46.97) | test  10347.77 (rec  10302.27, kl  45.50) | 1.2s
+epoch  30 | train  10273.42 (rec  10226.06, kl  47.36) | test  10350.40 (rec  10305.65, kl  44.75) | 1.2s
+epoch  31 | train  10272.04 (rec  10224.55, kl  47.49) | test  10342.96 (rec  10296.45, kl  46.51) | 1.2s
+epoch  32 | train  10268.95 (rec  10222.47, kl  46.48) | test  10346.39 (rec  10300.18, kl  46.21) | 1.2s
+epoch  33 | train  10269.98 (rec  10222.82, kl  47.16) | test  10346.06 (rec  10301.00, kl  45.06) | 1.2s
+epoch  34 | train  10268.57 (rec  10221.39, kl  47.18) | test  10346.75 (rec  10298.59, kl  48.16) | 1.1s
+epoch  35 | train  10267.32 (rec  10221.06, kl  46.26) | test  10340.61 (rec  10294.62, kl  45.99) | 1.2s
+epoch  36 | train  10269.15 (rec  10222.48, kl  46.66) | test  10347.19 (rec  10301.91, kl  45.28) | 1.2s
+epoch  37 | train  10268.24 (rec  10221.42, kl  46.82) | test  10349.08 (rec  10302.89, kl  46.19) | 1.2s
+epoch  38 | train  10266.67 (rec  10220.00, kl  46.67) | test  10338.93 (rec  10292.83, kl  46.10) | 1.2s
+epoch  39 | train  10266.20 (rec  10219.40, kl  46.80) | test  10341.42 (rec  10291.83, kl  49.59) | 1.2s
+epoch  40 | train  10267.37 (rec  10220.91, kl  46.46) | test  10341.00 (rec  10295.86, kl  45.14) | 1.2s
+epoch  41 | train  10264.04 (rec  10217.85, kl  46.19) | test  10341.66 (rec  10295.35, kl  46.31) | 1.2s
+epoch  42 | train  10264.01 (rec  10218.07, kl  45.93) | test  10339.78 (rec  10293.70, kl  46.08) | 1.2s
+epoch  43 | train  10262.34 (rec  10216.40, kl  45.95) | test  10338.05 (rec  10293.71, kl  44.34) | 1.2s
+epoch  44 | train  10261.75 (rec  10215.47, kl  46.28) | test  10337.08 (rec  10295.08, kl  42.00) | 1.2s
+epoch  45 | train  10260.28 (rec  10214.58, kl  45.71) | test  10340.40 (rec  10294.82, kl  45.58) | 1.1s
+epoch  46 | train  10260.97 (rec  10215.18, kl  45.78) | test  10341.55 (rec  10296.94, kl  44.61) | 1.2s
+epoch  47 | train  10260.70 (rec  10215.01, kl  45.69) | test  10338.76 (rec  10295.75, kl  43.01) | 1.2s
+epoch  48 | train  10258.02 (rec  10212.37, kl  45.65) | test  10337.56 (rec  10293.41, kl  44.15) | 1.2s
+epoch  49 | train  10258.59 (rec  10213.21, kl  45.38) | test  10338.91 (rec  10292.89, kl  46.02) | 1.2s
+epoch  50 | train  10257.69 (rec  10212.13, kl  45.56) | test  10356.49 (rec  10313.04, kl  43.45) | 1.1s
+epoch  51 | train  10255.82 (rec  10210.72, kl  45.11) | test  10334.01 (rec  10290.37, kl  43.64) | 1.2s
+epoch  52 | train  10258.58 (rec  10213.05, kl  45.53) | test  10334.03 (rec  10289.99, kl  44.04) | 1.7s
+epoch  53 | train  10254.84 (rec  10209.89, kl  44.96) | test  10335.28 (rec  10289.65, kl  45.63) | 1.2s
+epoch  54 | train  10254.23 (rec  10209.58, kl  44.65) | test  10337.15 (rec  10291.06, kl  46.09) | 1.2s
+epoch  55 | train  10252.87 (rec  10208.20, kl  44.67) | test  10333.05 (rec  10289.07, kl  43.98) | 1.2s
+epoch  56 | train  10253.49 (rec  10208.63, kl  44.86) | test  10333.97 (rec  10288.94, kl  45.02) | 1.2s
+epoch  57 | train  10252.32 (rec  10207.56, kl  44.77) | test  10329.42 (rec  10287.48, kl  41.94) | 1.1s
+epoch  58 | train  10251.32 (rec  10206.90, kl  44.43) | test  10330.63 (rec  10286.94, kl  43.68) | 1.2s
+epoch  59 | train  10252.82 (rec  10208.28, kl  44.54) | test  10332.80 (rec  10289.82, kl  42.98) | 1.2s
+epoch  60 | train  10249.47 (rec  10205.09, kl  44.39) | test  10332.41 (rec  10289.61, kl  42.80) | 1.2s
+epoch  61 | train  10248.71 (rec  10204.34, kl  44.37) | test  10329.62 (rec  10284.30, kl  45.31) | 1.2s
+epoch  62 | train  10250.12 (rec  10205.58, kl  44.55) | test  10330.39 (rec  10286.55, kl  43.84) | 1.3s
+epoch  63 | train  10249.15 (rec  10204.85, kl  44.30) | test  10330.29 (rec  10286.69, kl  43.59) | 1.1s
+epoch  64 | train  10247.21 (rec  10202.87, kl  44.34) | test  10331.25 (rec  10288.31, kl  42.93) | 1.2s
+epoch  65 | train  10247.81 (rec  10203.65, kl  44.16) | test  10334.36 (rec  10290.75, kl  43.61) | 1.2s
+epoch  66 | train  10249.24 (rec  10205.17, kl  44.07) | test  10330.80 (rec  10287.29, kl  43.50) | 1.2s
+epoch  67 | train  10246.02 (rec  10202.03, kl  43.99) | test  10328.99 (rec  10285.58, kl  43.41) | 1.2s
+epoch  68 | train  10245.07 (rec  10201.14, kl  43.93) | test  10331.80 (rec  10287.73, kl  44.07) | 1.2s
+epoch  69 | train  10244.73 (rec  10200.85, kl  43.88) | test  10330.41 (rec  10287.06, kl  43.35) | 1.2s
+epoch  70 | train  10242.89 (rec  10199.07, kl  43.82) | test  10328.54 (rec  10285.81, kl  42.72) | 1.2s
+epoch  71 | train  10243.99 (rec  10200.19, kl  43.81) | test  10335.40 (rec  10291.43, kl  43.97) | 1.2s
+epoch  72 | train  10244.54 (rec  10200.57, kl  43.97) | test  10328.85 (rec  10285.58, kl  43.26) | 1.2s
+epoch  73 | train  10242.14 (rec  10198.29, kl  43.85) | test  10339.08 (rec  10296.76, kl  42.33) | 1.2s
+epoch  74 | train  10243.49 (rec  10199.85, kl  43.63) | test  10327.51 (rec  10284.71, kl  42.80) | 1.2s
+epoch  75 | train  10241.26 (rec  10197.76, kl  43.50) | test  10326.03 (rec  10283.30, kl  42.73) | 1.2s
+epoch  76 | train  10240.37 (rec  10196.76, kl  43.61) | test  10326.26 (rec  10283.29, kl  42.96) | 1.2s
+epoch  77 | train  10240.90 (rec  10197.28, kl  43.62) | test  10326.83 (rec  10283.88, kl  42.96) | 1.2s
+epoch  78 | train  10239.53 (rec  10196.05, kl  43.48) | test  10327.24 (rec  10285.13, kl  42.10) | 1.8s
+epoch  79 | train  10239.86 (rec  10196.29, kl  43.58) | test  10326.04 (rec  10283.36, kl  42.67) | 1.2s
+epoch  80 | train  10238.45 (rec  10194.95, kl  43.50) | test  10326.79 (rec  10283.78, kl  43.01) | 1.2s
+epoch  81 | train  10238.87 (rec  10195.38, kl  43.50) | test  10326.46 (rec  10283.48, kl  42.97) | 1.2s
+epoch  82 | train  10238.28 (rec  10194.86, kl  43.42) | test  10327.03 (rec  10284.05, kl  42.98) | 1.2s
+epoch  83 | train  10238.89 (rec  10195.53, kl  43.35) | test  10328.33 (rec  10285.07, kl  43.26) | 1.2s
+epoch  84 | train  10237.83 (rec  10194.41, kl  43.41) | test  10325.59 (rec  10282.51, kl  43.08) | 1.2s
+epoch  85 | train  10237.44 (rec  10194.09, kl  43.36) | test  10325.34 (rec  10282.72, kl  42.62) | 1.2s
+epoch  86 | train  10237.03 (rec  10193.82, kl  43.21) | test  10326.59 (rec  10283.67, kl  42.92) | 1.2s
+epoch  87 | train  10236.64 (rec  10193.27, kl  43.37) | test  10324.67 (rec  10281.80, kl  42.87) | 1.2s
+epoch  88 | train  10236.46 (rec  10193.12, kl  43.35) | test  10325.43 (rec  10282.17, kl  43.26) | 1.2s
+epoch  89 | train  10235.73 (rec  10192.45, kl  43.28) | test  10325.56 (rec  10283.16, kl  42.40) | 1.2s
+epoch  90 | train  10236.39 (rec  10193.14, kl  43.25) | test  10326.97 (rec  10283.85, kl  43.12) | 1.2s
+epoch  91 | train  10237.33 (rec  10193.97, kl  43.36) | test  10325.43 (rec  10282.26, kl  43.16) | 1.2s
+epoch  92 | train  10234.89 (rec  10191.81, kl  43.08) | test  10325.08 (rec  10282.45, kl  42.63) | 1.2s
+epoch  93 | train  10234.56 (rec  10191.34, kl  43.21) | test  10324.68 (rec  10282.18, kl  42.50) | 1.2s
+epoch  94 | train  10234.47 (rec  10191.38, kl  43.09) | test  10324.73 (rec  10282.32, kl  42.41) | 1.2s
+epoch  95 | train  10235.04 (rec  10191.78, kl  43.26) | test  10324.79 (rec  10282.15, kl  42.64) | 1.2s
+epoch  96 | train  10233.77 (rec  10190.52, kl  43.25) | test  10324.27 (rec  10281.58, kl  42.70) | 1.2s
+epoch  97 | train  10235.05 (rec  10191.93, kl  43.11) | test  10324.87 (rec  10282.19, kl  42.69) | 1.2s
+epoch  98 | train  10235.07 (rec  10191.89, kl  43.19) | test  10325.32 (rec  10282.31, kl  43.01) | 1.2s
+epoch  99 | train  10233.73 (rec  10190.54, kl  43.19) | test  10324.39 (rec  10281.58, kl  42.81) | 1.2s
+epoch 100 | train  10233.51 (rec  10190.31, kl  43.20) | test  10324.81 (rec  10281.76, kl  43.05) | 1.2s
+train=5216 test=624 device=cuda
+params: 11.87M
+epoch   1 | train  10793.33 (rec  10683.75, kl 109.58) | test  10572.97 (rec  10491.85, kl  81.12) | 2.4s
+epoch   2 | train  10467.68 (rec  10396.90, kl  70.79) | test  10485.44 (rec  10424.03, kl  61.42) | 1.2s
+epoch   3 | train  10405.66 (rec  10339.51, kl  66.16) | test  10462.87 (rec  10395.43, kl  67.45) | 1.2s
+epoch   4 | train  10378.81 (rec  10314.88, kl  63.94) | test  10424.97 (rec  10370.53, kl  54.43) | 1.3s
+epoch   5 | train  10358.84 (rec  10298.42, kl  60.42) | test  10408.86 (rec  10355.25, kl  53.60) | 1.3s
+epoch   6 | train  10342.17 (rec  10285.70, kl  56.48) | test  10397.05 (rec  10346.07, kl  50.98) | 1.3s
+epoch   7 | train  10372.16 (rec  10299.11, kl  73.05) | test  10418.21 (rec  10344.42, kl  73.79) | 1.3s
+epoch   8 | train  10340.46 (rec  10278.71, kl  61.75) | test  10389.45 (rec  10339.83, kl  49.62) | 1.2s
+epoch   9 | train  10320.46 (rec  10266.60, kl  53.86) | test  10377.89 (rec  10333.10, kl  44.79) | 1.2s
+epoch  10 | train  10313.93 (rec  10262.31, kl  51.62) | test  10379.92 (rec  10325.69, kl  54.23) | 1.2s
+epoch  11 | train  10309.21 (rec  10259.00, kl  50.21) | test  10367.12 (rec  10319.60, kl  47.52) | 1.2s
+epoch  12 | train  10302.89 (rec  10254.76, kl  48.13) | test  10369.14 (rec  10321.89, kl  47.25) | 1.2s
+epoch  13 | train  10300.25 (rec  10252.49, kl  47.75) | test  10363.53 (rec  10318.47, kl  45.06) | 1.2s
+epoch  14 | train  10297.27 (rec  10250.25, kl  47.03) | test  10360.25 (rec  10316.89, kl  43.36) | 1.3s
+epoch  15 | train  10294.14 (rec  10247.41, kl  46.73) | test  10364.91 (rec  10318.87, kl  46.04) | 1.2s
+epoch  16 | train  10291.65 (rec  10245.03, kl  46.62) | test  10358.01 (rec  10311.47, kl  46.55) | 1.2s
+epoch  17 | train  10291.35 (rec  10244.85, kl  46.50) | test  10351.44 (rec  10308.69, kl  42.76) | 1.2s
+epoch  18 | train  10287.10 (rec  10241.16, kl  45.94) | test  10350.72 (rec  10306.73, kl  43.99) | 1.2s
+epoch  19 | train  10285.56 (rec  10239.80, kl  45.76) | test  10354.82 (rec  10311.55, kl  43.27) | 1.3s
+epoch  20 | train  10283.82 (rec  10238.26, kl  45.55) | test  10350.21 (rec  10306.02, kl  44.19) | 1.3s
+epoch  21 | train  10281.68 (rec  10236.10, kl  45.58) | test  10371.71 (rec  10327.11, kl  44.59) | 1.3s
+epoch  22 | train  10282.44 (rec  10237.21, kl  45.23) | test  10350.61 (rec  10309.23, kl  41.38) | 1.3s
+epoch  23 | train  10278.67 (rec  10233.45, kl  45.22) | test  10349.11 (rec  10304.25, kl  44.86) | 1.3s
+epoch  24 | train  10277.29 (rec  10232.65, kl  44.64) | test  10345.05 (rec  10302.67, kl  42.38) | 1.2s
+epoch  25 | train  10276.93 (rec  10231.91, kl  45.02) | test  10343.24 (rec  10298.69, kl  44.55) | 1.2s
+epoch  26 | train  10274.78 (rec  10229.99, kl  44.79) | test  10348.43 (rec  10300.16, kl  48.26) | 1.8s
+epoch  27 | train  10275.46 (rec  10230.66, kl  44.80) | test  10343.30 (rec  10300.10, kl  43.20) | 1.2s
+epoch  28 | train  10271.62 (rec  10227.03, kl  44.59) | test  10339.40 (rec  10295.26, kl  44.14) | 1.3s
+epoch  29 | train  10271.41 (rec  10226.90, kl  44.50) | test  10339.31 (rec  10296.16, kl  43.15) | 1.3s
+epoch  30 | train  10269.90 (rec  10225.35, kl  44.55) | test  10346.16 (rec  10303.04, kl  43.12) | 1.2s
+epoch  31 | train  10271.79 (rec  10227.40, kl  44.39) | test  10341.08 (rec  10297.69, kl  43.40) | 1.2s
+epoch  32 | train  10271.42 (rec  10227.28, kl  44.14) | test  10345.25 (rec  10303.11, kl  42.14) | 1.2s
+epoch  33 | train  10271.26 (rec  10226.71, kl  44.55) | test  10342.65 (rec  10296.56, kl  46.09) | 1.2s
+epoch  34 | train  10267.54 (rec  10223.26, kl  44.28) | test  10336.08 (rec  10292.38, kl  43.70) | 1.3s
+epoch  35 | train  10269.92 (rec  10225.64, kl  44.28) | test  10334.33 (rec  10291.16, kl  43.17) | 1.2s
+epoch  36 | train  10266.66 (rec  10222.26, kl  44.41) | test  10342.65 (rec  10298.96, kl  43.69) | 1.2s
+epoch  37 | train  10264.91 (rec  10220.74, kl  44.16) | test  10338.55 (rec  10296.24, kl  42.30) | 1.2s
+epoch  38 | train  10266.60 (rec  10222.73, kl  43.87) | test  10333.80 (rec  10291.84, kl  41.96) | 1.2s
+epoch  39 | train  10264.60 (rec  10220.56, kl  44.04) | test  10343.68 (rec  10301.39, kl  42.28) | 1.2s
+epoch  40 | train  10262.93 (rec  10219.09, kl  43.84) | test  10333.64 (rec  10290.59, kl  43.05) | 1.2s
+epoch  41 | train  10264.16 (rec  10220.10, kl  44.06) | test  10336.62 (rec  10293.37, kl  43.25) | 1.2s
+epoch  42 | train  10262.77 (rec  10218.98, kl  43.79) | test  10353.98 (rec  10313.24, kl  40.74) | 1.2s
+epoch  43 | train  10263.66 (rec  10219.65, kl  44.01) | test  10334.89 (rec  10291.40, kl  43.49) | 1.2s
+epoch  44 | train  10261.20 (rec  10217.56, kl  43.64) | test  10337.95 (rec  10295.44, kl  42.52) | 1.2s
+epoch  45 | train  10257.92 (rec  10214.33, kl  43.59) | test  10334.04 (rec  10290.72, kl  43.32) | 1.2s
+epoch  46 | train  10259.98 (rec  10216.25, kl  43.73) | test  10336.66 (rec  10293.56, kl  43.10) | 1.2s
+epoch  47 | train  10260.32 (rec  10216.55, kl  43.76) | test  10334.82 (rec  10291.59, kl  43.23) | 1.3s
+epoch  48 | train  10256.98 (rec  10213.54, kl  43.44) | test  10331.00 (rec  10289.21, kl  41.78) | 1.2s
+epoch  49 | train  10259.16 (rec  10215.56, kl  43.60) | test  10331.77 (rec  10289.79, kl  41.98) | 1.2s
+epoch  50 | train  10258.30 (rec  10214.63, kl  43.67) | test  10334.78 (rec  10291.22, kl  43.55) | 1.2s
+epoch  51 | train  10254.95 (rec  10211.58, kl  43.37) | test  10328.35 (rec  10286.67, kl  41.68) | 1.8s
+epoch  52 | train  10257.17 (rec  10213.79, kl  43.38) | test  10330.57 (rec  10287.67, kl  42.89) | 1.2s
+epoch  53 | train  10255.48 (rec  10212.03, kl  43.45) | test  10329.76 (rec  10287.00, kl  42.75) | 1.2s
+epoch  54 | train  10254.16 (rec  10210.81, kl  43.35) | test  10337.75 (rec  10294.74, kl  43.02) | 1.3s
+epoch  55 | train  10254.27 (rec  10210.97, kl  43.30) | test  10328.56 (rec  10286.41, kl  42.15) | 1.3s
+epoch  56 | train  10253.33 (rec  10209.95, kl  43.39) | test  10329.90 (rec  10288.81, kl  41.09) | 1.2s
+epoch  57 | train  10253.57 (rec  10210.32, kl  43.25) | test  10335.27 (rec  10293.60, kl  41.67) | 1.2s
+epoch  58 | train  10252.27 (rec  10209.03, kl  43.23) | test  10328.57 (rec  10286.59, kl  41.98) | 1.2s
+epoch  59 | train  10253.50 (rec  10210.21, kl  43.28) | test  10339.53 (rec  10293.70, kl  45.83) | 1.2s
+epoch  60 | train  10251.06 (rec  10207.83, kl  43.23) | test  10328.66 (rec  10286.44, kl  42.22) | 1.3s
+epoch  61 | train  10252.52 (rec  10209.22, kl  43.31) | test  10328.93 (rec  10286.17, kl  42.76) | 1.3s
+epoch  62 | train  10249.98 (rec  10206.68, kl  43.30) | test  10326.01 (rec  10283.66, kl  42.35) | 1.3s
+epoch  63 | train  10251.26 (rec  10208.11, kl  43.16) | test  10328.14 (rec  10284.65, kl  43.49) | 1.3s
+epoch  64 | train  10248.80 (rec  10205.69, kl  43.11) | test  10325.79 (rec  10283.13, kl  42.66) | 1.3s
+epoch  65 | train  10251.66 (rec  10208.51, kl  43.15) | test  10324.99 (rec  10282.21, kl  42.78) | 1.2s
+epoch  66 | train  10248.38 (rec  10205.35, kl  43.03) | test  10325.42 (rec  10281.92, kl  43.51) | 1.2s
+epoch  67 | train  10249.61 (rec  10206.54, kl  43.07) | test  10332.67 (rec  10290.84, kl  41.82) | 1.3s
+epoch  68 | train  10247.14 (rec  10204.07, kl  43.07) | test  10324.14 (rec  10281.46, kl  42.68) | 1.3s
+epoch  69 | train  10246.90 (rec  10203.93, kl  42.97) | test  10330.32 (rec  10287.72, kl  42.60) | 1.3s
+epoch  70 | train  10247.33 (rec  10204.49, kl  42.84) | test  10323.69 (rec  10281.18, kl  42.50) | 1.3s
+epoch  71 | train  10246.51 (rec  10203.42, kl  43.10) | test  10324.69 (rec  10282.33, kl  42.36) | 1.3s
+epoch  72 | train  10246.97 (rec  10204.11, kl  42.86) | test  10326.99 (rec  10284.69, kl  42.30) | 1.3s
+epoch  73 | train  10247.18 (rec  10204.20, kl  42.98) | test  10329.96 (rec  10286.66, kl  43.30) | 1.2s
+epoch  74 | train  10244.66 (rec  10201.72, kl  42.94) | test  10327.77 (rec  10284.77, kl  43.00) | 1.2s
+epoch  75 | train  10246.13 (rec  10203.19, kl  42.94) | test  10324.26 (rec  10281.81, kl  42.44) | 1.2s
+epoch  76 | train  10246.48 (rec  10203.58, kl  42.90) | test  10325.24 (rec  10282.56, kl  42.68) | 1.8s
+epoch  77 | train  10244.23 (rec  10201.34, kl  42.89) | test  10327.18 (rec  10284.22, kl  42.96) | 1.2s
+epoch  78 | train  10244.65 (rec  10202.03, kl  42.62) | test  10325.60 (rec  10284.25, kl  41.35) | 1.2s
+epoch  79 | train  10243.97 (rec  10201.03, kl  42.93) | test  10324.57 (rec  10282.51, kl  42.06) | 1.2s
+epoch  80 | train  10244.06 (rec  10201.25, kl  42.81) | test  10322.25 (rec  10280.25, kl  42.00) | 1.2s
+epoch  81 | train  10244.28 (rec  10201.30, kl  42.97) | test  10322.20 (rec  10279.03, kl  43.18) | 1.2s
+epoch  82 | train  10242.87 (rec  10199.99, kl  42.88) | test  10321.98 (rec  10279.43, kl  42.54) | 1.2s
+epoch  83 | train  10242.47 (rec  10199.76, kl  42.71) | test  10324.20 (rec  10282.10, kl  42.10) | 1.2s
+epoch  84 | train  10241.69 (rec  10198.93, kl  42.76) | test  10321.99 (rec  10279.79, kl  42.20) | 1.2s
+epoch  85 | train  10242.69 (rec  10199.99, kl  42.70) | test  10322.21 (rec  10280.11, kl  42.10) | 1.3s
+epoch  86 | train  10242.09 (rec  10199.29, kl  42.79) | test  10329.37 (rec  10286.82, kl  42.55) | 1.2s
+epoch  87 | train  10241.66 (rec  10198.85, kl  42.82) | test  10321.47 (rec  10279.27, kl  42.20) | 1.2s
+epoch  88 | train  10241.93 (rec  10199.22, kl  42.71) | test  10322.20 (rec  10280.47, kl  41.73) | 1.2s
+epoch  89 | train  10242.33 (rec  10199.55, kl  42.79) | test  10322.14 (rec  10280.17, kl  41.97) | 1.3s
+epoch  90 | train  10241.82 (rec  10199.07, kl  42.75) | test  10321.87 (rec  10280.08, kl  41.79) | 1.2s
+epoch  91 | train  10241.30 (rec  10198.54, kl  42.77) | test  10321.85 (rec  10279.71, kl  42.14) | 1.3s
+epoch  92 | train  10240.87 (rec  10197.97, kl  42.90) | test  10321.44 (rec  10279.11, kl  42.33) | 1.3s
+epoch  93 | train  10240.18 (rec  10197.60, kl  42.59) | test  10321.46 (rec  10279.35, kl  42.11) | 1.2s
+epoch  94 | train  10241.07 (rec  10198.16, kl  42.91) | test  10321.53 (rec  10279.02, kl  42.50) | 1.2s
+epoch  95 | train  10239.93 (rec  10197.22, kl  42.71) | test  10321.26 (rec  10279.50, kl  41.76) | 1.2s
+epoch  96 | train  10241.20 (rec  10198.35, kl  42.85) | test  10321.62 (rec  10279.41, kl  42.20) | 1.2s
+epoch  97 | train  10239.77 (rec  10197.08, kl  42.69) | test  10321.87 (rec  10279.81, kl  42.06) | 1.2s
+epoch  98 | train  10240.99 (rec  10198.16, kl  42.83) | test  10324.04 (rec  10281.80, kl  42.24) | 1.2s
+epoch  99 | train  10239.50 (rec  10196.71, kl  42.79) | test  10320.98 (rec  10278.59, kl  42.39) | 1.2s
+epoch 100 | train  10238.79 (rec  10196.19, kl  42.60) | test  10320.96 (rec  10279.35, kl  41.61) | 1.2s
+samples T=1.0: {'fid': 0.1532828328907889, 'fid2048': 201.7171228012822, 'is': 1.7423230338773907}
+samples T=0.8: {'fid': 0.14593081408541358, 'fid2048': 213.42209259695073, 'is': 1.6525626421664528}
+reconstructions: {'fid': 0.1807478892662071, 'fid2048': 192.02946874811556, 'is': 1.9535762896594018}
+real vs real (N=2608): {'fid': 0.001416209176903438, 'fid2048': 5.559701316272225, 'is': 2.2173734633520756, 'n_images': 2608}
+samples T=1.0: {'fid': 0.15079003431463722, 'fid2048': 202.14426310137844, 'is': 1.7152183096203752}
+reconstructions: {'fid': 0.1745545854112675, 'fid2048': 189.41042268261432, 'is': 1.9666065271083046}
+samples T=1.0: {'fid': 0.16740897631161283, 'fid2048': 203.78587122622048, 'is': 1.7008183554568033}
+reconstructions: {'fid': 0.19061231767771125, 'fid2048': 196.7470566324525, 'is': 1.9385523225991506}
+{
+  "z128": {
+    "metrics": {
+      "n_images": 5216,
+      "sample_T1.0": {
+        "fid": 0.1532828328907889,
+        "fid2048": 201.7171228012822,
+        "is": 1.7423230338773907
+      },
+      "sample_T0.8": {
+        "fid": 0.14593081408541358,
+        "fid2048": 213.42209259695073,
+        "is": 1.6525626421664528
+      },
+      "reconstruction": {
+        "fid": 0.1807478892662071,
+        "fid2048": 192.02946874811556,
+        "is": 1.9535762896594018
+      },
+      "real_vs_real": {
+        "fid": 0.001416209176903438,
+        "fid2048": 5.559701316272225,
+        "is": 2.2173734633520756,
+        "n_images": 2608
+      }
+    },
+    "final_train_loss": 10236.88298128858,
+    "final_test_loss": 10322.37780448718,
+    "final_train_kl": 43.33032556227696,
+    "final_test_recon": 10279.265625
+  },
+  "z64": {
+    "metrics": {
+      "n_images": 5216,
+      "sample_T1.0": {
+        "fid": 0.15079003431463722,
+        "fid2048": 202.14426310137844,
+        "is": 1.7152183096203752
+      },
+      "reconstruction": {
+        "fid": 0.1745545854112675,
+        "fid2048": 189.41042268261432,
+        "is": 1.9666065271083046
+      }
+    },
+    "final_train_loss": 10233.508825231482,
+    "final_test_loss": 10324.808819110576,
+    "final_train_kl": 43.2032585144043,
+    "final_test_recon": 10281.761693709936
+  },
+  "z256": {
+    "metrics": {
+      "n_images": 5216,
+      "sample_T1.0": {
+        "fid": 0.16740897631161283,
+        "fid2048": 203.78587122622048,
+        "is": 1.7008183554568033
+      },
+      "reconstruction": {
+        "fid": 0.19061231767771125,
+        "fid2048": 196.7470566324525,
+        "is": 1.9385523225991506
+      }
+    },
+    "final_train_loss": 10238.791702835648,
+    "final_test_loss": 10320.963917267629,
+    "final_train_kl": 42.601989887378835,
+    "final_test_recon": 10279.353014823719
+  }
+}
+[wslx] end 2026-10-30T14:26:51-07:00 exit=0

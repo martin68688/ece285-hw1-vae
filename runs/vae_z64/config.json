@@ -1,0 +1,12 @@
+{
+  "data": "/home/haoming/data/chest_xray",
+  "out": "runs/vae_z64",
+  "img_size": 128,
+  "latent_dim": 64,
+  "beta": 1.0,
+  "epochs": 100,
+  "batch_size": 64,
+  "lr": 0.001,
+  "weight_decay": 0.0,
+  "seed": 0
+}
