@@ -10,6 +10,7 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
+from matplotlib.lines import Line2D
 import numpy as np
 from PIL import Image
 
@@ -30,9 +31,9 @@ def loss_figure(runs, out):
     ax = axes[0]
     it = np.arange(len(h["iter_loss"])) / iters_per_epoch
     ax.plot(it, h["iter_loss"], color="0.8", lw=0.5, label="per iteration")
-    ax.plot(it[49:], smooth(h["iter_loss"]), color="C0", lw=1, label="moving avg (50)")
-    ax.set_ylim(10150, 10700); ax.set_xlabel("epoch"); ax.set_title("(a) Training loss (neg. ELBO)")
-    ax.legend(frameon=False)
+    ax.plot(it[49:], smooth(h["iter_loss"]), color="C0", lw=1, label="50-iteration average")
+    ax.set_ylim(10150, 10800); ax.set_xlabel("epoch"); ax.set_title("(a) Training loss (neg. ELBO)")
+    ax.legend(frameon=False, loc="upper right")
 
     ax = axes[1]
     for run, c in zip(runs, ["C0", "C1", "C2"]):
@@ -41,12 +42,16 @@ def loss_figure(runs, out):
         ep = np.arange(1, len(hh["train_loss"]) + 1)
         ax.plot(ep, hh["train_loss"], color=c, lw=1, label=f"train, d={z}")
         ax.plot(ep, hh["test_loss"], color=c, lw=1, ls="--", label=f"held-out, d={z}")
-    ax.set_ylim(10150, 10600); ax.set_xlabel("epoch"); ax.set_title("(b) Per-epoch neg. ELBO")
-    ax.legend(frameon=False, ncol=1, fontsize=5.5)
+    ax.set_ylim(10150, 10800); ax.set_xlabel("epoch"); ax.set_title("(b) Per-epoch neg. ELBO")
+    colors = [Line2D([], [], color=c, lw=1, label=f"d={json.load(open(r / 'config.json'))['latent_dim']}")
+              for r, c in zip(runs, ["C0", "C1", "C2"])]
+    styles = [Line2D([], [], color="0.4", lw=1, label="train"),
+              Line2D([], [], color="0.4", lw=1, ls="--", label="held-out")]
+    ax.legend(handles=colors + styles, frameon=False, ncol=2, loc="upper right", columnspacing=1.0)
 
     ax = axes[2]
     ep = np.arange(1, len(h["train_kl"]) + 1)
-    ax.plot(ep, h["train_recon"], color="C0", lw=1, label="recon. (BCE)")
+    ax.plot(ep, h["train_recon"], color="C0", lw=1, label="reconstruction (BCE)")
     ax.set_ylim(10150, 10600)
     ax2 = ax.twinx()
     ax2.plot(ep, h["train_kl"], color="C3", lw=1, label="KL")
