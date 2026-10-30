@@ -10,59 +10,79 @@ from pathlib import Path
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
-from matplotlib.lines import Line2D
+from matplotlib.ticker import FuncFormatter
 import numpy as np
 from PIL import Image
 
 plt.rcParams.update({"font.size": 8, "axes.titlesize": 8, "legend.fontsize": 7})
 
 
-def smooth(x, k=50):
-    x = np.asarray(x)
-    return np.convolve(x, np.ones(k) / k, mode="valid")
+LOSS_STYLE = {
+    "font.family": "sans-serif",
+    "font.sans-serif": ["Arial", "Helvetica", "DejaVu Sans", "sans-serif"],
+    "pdf.fonttype": 42,
+    "font.size": 6,
+    "axes.spines.right": False,
+    "axes.spines.top": False,
+    "axes.linewidth": 0.6,
+    "xtick.major.width": 0.6,
+    "ytick.major.width": 0.6,
+    "xtick.major.size": 2.2,
+    "ytick.major.size": 2.2,
+}
+BLUE, BLUE2, GREY = "#0F4D92", "#3775BA", "#E4E4E4"
+LATENT_COLORS = {128: BLUE, 64: "#42949E", 256: "#B64342"}
 
 
 def loss_figure(runs, out):
-    main = runs[0]
-    h = json.load(open(main / "history.json"))
-    iters_per_epoch = len(h["iter_loss"]) // len(h["train_loss"])
-    fig, axes = plt.subplots(1, 3, figsize=(6.8, 1.55))
+    hist = {json.load(open(r / "config.json"))["latent_dim"]: json.load(open(r / "history.json")) for r in runs}
+    main = json.load(open(runs[0] / "config.json"))["latent_dim"]
+    h = hist[main]
+    epochs = np.arange(1, len(h["train_loss"]) + 1)
+    iters = np.arange(len(h["iter_loss"])) / (len(h["iter_loss"]) // len(h["train_loss"]))
+    t = h["train_loss"]
+    share = (t[0] - t[9]) / (t[0] - t[-1])
+    short = FuncFormatter(lambda v, _: f"{v - 10000:.0f}")
 
-    ax = axes[0]
-    it = np.arange(len(h["iter_loss"])) / iters_per_epoch
-    ax.plot(it, h["iter_loss"], color="0.8", lw=0.5, label="per iteration")
-    ax.plot(it[49:], smooth(h["iter_loss"]), color="C0", lw=1, label="50-iteration average")
-    ax.set_ylim(10150, 10800); ax.set_xlabel("epoch"); ax.set_title("(a) Training loss (neg. ELBO)")
-    ax.legend(frameon=False, loc="upper right")
+    with plt.rc_context(LOSS_STYLE):
+        fig = plt.figure(figsize=(5.5, 1.25))
+        gs = fig.add_gridspec(2, 3, width_ratios=[1.3, 1, 1], left=0.07, right=0.985, top=0.875, bottom=0.235,
+                              wspace=0.38, hspace=0.5)
+        ax_a = fig.add_subplot(gs[:, 0])
+        ax_b = fig.add_subplot(gs[:, 1])
+        ax_c = fig.add_subplot(gs[0, 2])
+        ax_d = fig.add_subplot(gs[1, 2], sharex=ax_c)
 
-    ax = axes[1]
-    for run, c in zip(runs, ["C0", "C1", "C2"]):
-        hh = json.load(open(run / "history.json"))
-        z = json.load(open(run / "config.json"))["latent_dim"]
-        ep = np.arange(1, len(hh["train_loss"]) + 1)
-        ax.plot(ep, hh["train_loss"], color=c, lw=1, label=f"train, d={z}")
-        ax.plot(ep, hh["test_loss"], color=c, lw=1, ls="--", label=f"held-out, d={z}")
-    ax.set_ylim(10150, 10800); ax.set_xlabel("epoch"); ax.set_title("(b) Per-epoch neg. ELBO")
-    colors = [Line2D([], [], color=c, lw=1, label=f"d={json.load(open(r / 'config.json'))['latent_dim']}")
-              for r, c in zip(runs, ["C0", "C1", "C2"])]
-    styles = [Line2D([], [], color="0.4", lw=1, label="train"),
-              Line2D([], [], color="0.4", lw=1, ls="--", label="held-out")]
-    ax.legend(handles=colors + styles, frameon=False, ncol=2, loc="upper right", columnspacing=1.0)
+        ax_a.plot(iters, h["iter_loss"], color=GREY, lw=0.3, zorder=1)
+        ax_a.plot(epochs, h["train_loss"], color=BLUE, lw=1.1, zorder=3)
+        ax_a.plot(epochs, h["test_loss"], color=BLUE2, lw=0.8, ls=(0, (3, 1.5)), zorder=3)
+        ax_a.axvline(10, color="#4D4D4D", lw=0.5, ls=":", zorder=2)
+        ax_a.text(13, 10585, f"{share:.0%} of the drop\nby epoch 10", va="top", color="#272727")
+        ax_a.text(99, 10345, "held-out", ha="right", va="bottom", color=BLUE2)
+        ax_a.text(99, 10172, "train", ha="right", va="bottom", color=BLUE)
+        ax_a.set(xlim=(0, 100), ylim=(10160, 10600), xlabel="Epoch", ylabel=r"Neg. ELBO $-\ 10^4$")
+        ax_a.yaxis.set_major_formatter(short)
 
-    ax = axes[2]
-    ep = np.arange(1, len(h["train_kl"]) + 1)
-    ax.plot(ep, h["train_recon"], color="C0", lw=1, label="reconstruction (BCE)")
-    ax.set_ylim(10150, 10600)
-    ax2 = ax.twinx()
-    ax2.plot(ep, h["train_kl"], color="C3", lw=1, label="KL")
-    ax2.set_ylim(0, 120)
-    ax.set_xlabel("epoch"); ax.set_title("(c) Loss terms (train, d=128)")
-    lines = ax.get_lines() + ax2.get_lines()
-    ax.legend(lines, [l.get_label() for l in lines], frameon=False, loc="upper right")
-    for a in axes:
-        a.grid(alpha=0.3)
-    fig.tight_layout(pad=0.4)
-    fig.savefig(out / "loss_curves.pdf")
+        for z in (64, 256, 128):
+            ax_b.plot(epochs[4:], hist[z]["test_loss"][4:], color=LATENT_COLORS[z], lw=0.7)
+            ax_d.plot(epochs, hist[z]["train_kl"], color=LATENT_COLORS[z], lw=0.7)
+        for i, z in enumerate((64, 128, 256)):
+            ax_b.text(0.98, 0.97 - i * 0.105, f"d = {z}", transform=ax_b.transAxes, ha="right", va="top",
+                      color=LATENT_COLORS[z])
+        ax_b.set(xlim=(5, 100), ylim=(10315, 10375), xlabel="Epoch", ylabel=r"Held-out $-\ 10^4$")
+        ax_b.yaxis.set_major_formatter(short)
+
+        ax_c.plot(epochs, h["train_recon"], color=BLUE, lw=0.9)
+        ax_c.set(ylim=(10190, 10300), ylabel=r"BCE $-\ 10^4$")
+        ax_c.yaxis.set_major_formatter(short)
+        ax_c.tick_params(labelbottom=False)
+        ax_d.set(xlim=(0, 100), ylim=(35, 75), xlabel="Epoch", ylabel="KL")
+
+        for ax, label in ((ax_a, "a"), (ax_b, "b"), (ax_c, "c"), (ax_d, "d")):
+            box = ax.get_position()
+            fig.text(box.x0 - 0.055, box.y1 + 0.1, label, fontsize=8, fontweight="bold", va="top")
+        fig.align_ylabels([ax_c, ax_d])
+        fig.savefig(out / "loss_curves.pdf")
     plt.close(fig)
 
 
