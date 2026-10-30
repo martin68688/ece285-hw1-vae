@@ -26,7 +26,7 @@ def loss_figure(runs, out):
     main = runs[0]
     h = json.load(open(main / "history.json"))
     iters_per_epoch = len(h["iter_loss"]) // len(h["train_loss"])
-    fig, axes = plt.subplots(1, 3, figsize=(6.8, 1.75))
+    fig, axes = plt.subplots(1, 3, figsize=(6.8, 1.55))
 
     ax = axes[0]
     it = np.arange(len(h["iter_loss"])) / iters_per_epoch
